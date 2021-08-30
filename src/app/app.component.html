@@ -1,3 +1,48 @@
-<label>Введите имя:</label>
-<input [(ngModel)]="name" placeholder="name" />
-<h1>Добро пожаловать {{ name }}!</h1>
+<div class="container">
+    <div class="row">
+
+        <div class="col-3" style="display: grid">
+            <a href="/">Все</a>
+            <a href="/">Любимые</a>
+            <a href="/">Удалённые</a>
+        </div>
+
+        <div class="col-9">
+            
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Ссылка</th>
+                    <th scope="col">Превью</th>
+                    <th scope="col">Действия</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>alien</td>
+                    <td>https://github.githubassets.com/images/icons/emoji/unicode/1f47d.png?v8</td>
+                    <td><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f47d.png?v8"></td>
+                    <td>[*] [x]</td>
+                </tr>
+                <tr>
+                    <td>angel</td>
+                    <td>https://github.githubassets.com/images/icons/emoji/unicode/1f47c.png?v8</td>
+                    <td><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f47c.png?v8"></td>
+                    <td>[*] [x]</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="text-center">
+            <span>Coded by <a href="https://github.com/MC-gine/">MC-gine</a>, 2021</span>
+        </div>
+    </div>
+</footer>
